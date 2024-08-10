@@ -1,6 +1,10 @@
-The Red-Black (RB) tree is a type of Binary Search Tree with excellent self-balancing characteristics, making it ideal for storing a large number of sorted numeric data. For development convenience, my implementation currently supports only integers.
+## Red-Black Tree (RBT) Implementation
 
-This project supports the following operations:
+### Overview
+
+The Red-Black Tree (RBT) is a type of self-balancing Binary Search Tree (BST) that maintains sorted order and ensures O(log n) time complexity for insertion, deletion, and search operations. This makes it highly efficient for storing and managing a large amount of sorted numeric data. For simplicity, this implementation supports integer values only.
+
+### Supported Operations
 
 - **Initialization**: `RBT`
 - **Key Insertion**: `.insert(key)`
@@ -10,21 +14,51 @@ This project supports the following operations:
 - **Key Deletion**: `.remove(key)`
 - **Data Size**: `.size()`
 - **Print Tree Structure**: `.printTree()`
-- **Check Tree Structure Integrity**: `.checkRBTIntegrity()`
+- **Check Tree Integrity**: `.checkRBTIntegrity()`
 
-I have also written demo (test) code that performs all these operations while ensuring that the RB Tree characteristics are maintained. If you notice any anomalies in the results, please check the tree’s integrity. If the tree fails, let me know.
+### Running the Tests
 
-To run the test file, please follow these steps:
-1. Change your directory to the `build` folder under the project root.
-2. Compile the project by running `cmake ..` and `make` in the terminal.
-3. Execute the test file by running `./run_test`.
+To ensure that the Red-Black Tree operates correctly and maintains its properties, follow these steps to compile and run the test code:
 
-The test will warn you if any operations fail.
+1. **Navigate to the Build Directory**:
+   ```bash
+   cd build
+   ```
+2. **Compile the Project**:
+   Run the following commands in the terminal:
+   ```bash
+   cmake ..
+   make
+   ```
+3. **Execute the Test File**:
+   ```bash
+   ./run_tests
+   ```
 
-**References:**
+The test will verify all operations and alert you to any failures. If the tree fails the integrity check, please report any anomalies for further investigation.
 
-- **RBT - Insertion**: [YouTube](https://www.youtube.com/watch?v=Ij8-xX3PreE&t=377s)
-- **RBT - Deletion**: 
+### Project Data Structure
+
+The project is organized as follows:
+
+```
+project-root/
+│
+├── code/
+│   ├── RBTree.h
+│   └── RBTree.cpp
+│
+├── test/
+│   └── test.cpp
+│
+└── CMakeLists.txt
+```
+
+### References
+
+- **Red-Black Tree Insertion**:
+  - [YouTube](https://www.youtube.com/watch?v=Ij8-xX3PreE&t=377s)
+- **Red-Black Tree Deletion**:
   - [YouTube](https://www.youtube.com/watch?v=lU99loSvD8s)
   - [YouTube](https://www.youtube.com/watch?v=iw8N1_keEWA)
   - [Bilibili](https://www.bilibili.com/video/BV16m421u7Tb/?spm_id_from=333.1007.0.0)
