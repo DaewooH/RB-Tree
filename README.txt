@@ -21,19 +21,19 @@ The Red-Black Tree (RBT) is a type of self-balancing Binary Search Tree (BST) th
 To ensure that the Red-Black Tree operates correctly and maintains its properties, follow these steps to compile and run the test code:
 
 1. **Navigate to the Build Directory**:
-   ```bash
+
    cd build
-   ```
+
 2. **Compile the Project**:
    Run the following commands in the terminal:
-   ```bash
+
    cmake ..
    make
-   ```
+
 3. **Execute the Test File**:
-   ```bash
+
    ./run_tests
-   ```
+
 
 The test will verify all operations and alert you to any failures. If the tree fails the integrity check, please report any anomalies for further investigation.
 
@@ -41,7 +41,7 @@ The test will verify all operations and alert you to any failures. If the tree f
 
 The project is organized as follows:
 
-```
+
 project-root/
 │
 ├── code/
@@ -52,7 +52,7 @@ project-root/
 │   └── test.cpp
 │
 └── CMakeLists.txt
-```
+
 
 ### References
 
