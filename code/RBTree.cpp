@@ -613,5 +613,19 @@ int RBT::sizeHelper(node* n) const {
     return 1 + sizeHelper(n->left) + sizeHelper(n->right);
 }
 
+int RBT::min(){
+    node* cursor = root;
+    while(cursor->left){
+        cursor = cursor->left;
+    }
+    return cursor->data;
+}
 
+int RBT::max(){
+    node* cursor = root;
+    while(cursor->right){
+        cursor = cursor->right;
+    }
+    return cursor->data;
+}
 

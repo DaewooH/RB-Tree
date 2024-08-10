@@ -23,8 +23,11 @@ int main() {
     }
     tree.printTree();  // print out the tree for visual benefit
 
+    // find the min and max of the tree
+    cout<<"\nThe min of the tree is: "<<tree.min()<<"\nAnd the max of the tree is: "<<tree.max()<<endl;
+
     // Output a message indicating insertion is complete
-    cout << "All numbers inserted into the tree." << endl;
+    cout << "\nAll numbers inserted into the tree." << endl;
     // Optionally, you can search for a number to test the find function
     for(int num: numbers){
         if(!tree.find(num)){

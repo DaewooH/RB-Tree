@@ -35,6 +35,12 @@ public:
 
     // counting the numbers stored in the tree
     int size() const;
+
+    // find the minimum number of the tree
+    int min();
+
+    // find the max number of the tree
+    int max();
 private:
     node* root;
     node* init_node(int key);

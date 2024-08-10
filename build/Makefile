@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rbtree
+# Target rules for targets named run_tests
 
 # Build rule for target.
-rbtree: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rbtree
-.PHONY : rbtree
+run_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
 
 # fast build rule for target.
-rbtree/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree.dir/build.make CMakeFiles/rbtree.dir/build
-.PHONY : rbtree/fast
+run_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
 
 code/RBTree.o: code/RBTree.cpp.o
 .PHONY : code/RBTree.o
 
 # target to build an object file
 code/RBTree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree.dir/build.make CMakeFiles/rbtree.dir/code/RBTree.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/code/RBTree.cpp.o
 .PHONY : code/RBTree.cpp.o
 
 code/RBTree.i: code/RBTree.cpp.i
@@ -142,7 +142,7 @@ code/RBTree.i: code/RBTree.cpp.i
 
 # target to preprocess a source file
 code/RBTree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree.dir/build.make CMakeFiles/rbtree.dir/code/RBTree.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/code/RBTree.cpp.i
 .PHONY : code/RBTree.cpp.i
 
 code/RBTree.s: code/RBTree.cpp.s
@@ -150,7 +150,7 @@ code/RBTree.s: code/RBTree.cpp.s
 
 # target to generate assembly for a file
 code/RBTree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree.dir/build.make CMakeFiles/rbtree.dir/code/RBTree.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/code/RBTree.cpp.s
 .PHONY : code/RBTree.cpp.s
 
 test/test.o: test/test.cpp.o
@@ -158,7 +158,7 @@ test/test.o: test/test.cpp.o
 
 # target to build an object file
 test/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree.dir/build.make CMakeFiles/rbtree.dir/test/test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/test/test.cpp.o
 .PHONY : test/test.cpp.o
 
 test/test.i: test/test.cpp.i
@@ -166,7 +166,7 @@ test/test.i: test/test.cpp.i
 
 # target to preprocess a source file
 test/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree.dir/build.make CMakeFiles/rbtree.dir/test/test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/test/test.cpp.i
 .PHONY : test/test.cpp.i
 
 test/test.s: test/test.cpp.s
@@ -174,7 +174,7 @@ test/test.s: test/test.cpp.s
 
 # target to generate assembly for a file
 test/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree.dir/build.make CMakeFiles/rbtree.dir/test/test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/test/test.cpp.s
 .PHONY : test/test.cpp.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... rbtree"
+	@echo "... run_tests"
 	@echo "... code/RBTree.o"
 	@echo "... code/RBTree.i"
 	@echo "... code/RBTree.s"

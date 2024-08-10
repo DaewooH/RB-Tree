@@ -17,9 +17,9 @@ set(SOURCES
 include_directories(${CMAKE_SOURCE_DIR}/code)
 
 # Create an executable
-add_executable(rbtree ${SOURCES})
+add_executable(run_tests ${SOURCES})
 
 # Enable debugging information and disable optimizations
-set_target_properties(rbtree PROPERTIES
+set_target_properties(run_tests PROPERTIES
     COMPILE_FLAGS "-g -O0 -fno-omit-frame-pointer"
 )

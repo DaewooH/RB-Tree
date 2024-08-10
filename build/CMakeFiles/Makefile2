@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = "/Users/dayuhuang/Desktop/Back to School/2024 Summer/CSPB 227
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/rbtree.dir/all
+all: CMakeFiles/run_tests.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/rbtree.dir/clean
+clean: CMakeFiles/run_tests.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/rbtree.dir
+# Target rules for target CMakeFiles/run_tests.dir
 
 # All Build rule for target.
-CMakeFiles/rbtree.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree.dir/build.make CMakeFiles/rbtree.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree.dir/build.make CMakeFiles/rbtree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/dayuhuang/Desktop/Back to School/2024 Summer/CSPB 2270/Week 11/RB-Tree/build/CMakeFiles" --progress-num=1,2,3 "Built target rbtree"
-.PHONY : CMakeFiles/rbtree.dir/all
+CMakeFiles/run_tests.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/dayuhuang/Desktop/Back to School/2024 Summer/CSPB 2270/Week 11/RB-Tree/build/CMakeFiles" --progress-num=1,2,3 "Built target run_tests"
+.PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/rbtree.dir/rule: cmake_check_build_system
+CMakeFiles/run_tests.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/dayuhuang/Desktop/Back to School/2024 Summer/CSPB 2270/Week 11/RB-Tree/build/CMakeFiles" 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rbtree.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/dayuhuang/Desktop/Back to School/2024 Summer/CSPB 2270/Week 11/RB-Tree/build/CMakeFiles" 0
-.PHONY : CMakeFiles/rbtree.dir/rule
+.PHONY : CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
-rbtree: CMakeFiles/rbtree.dir/rule
-.PHONY : rbtree
+run_tests: CMakeFiles/run_tests.dir/rule
+.PHONY : run_tests
 
 # clean rule for target.
-CMakeFiles/rbtree.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree.dir/build.make CMakeFiles/rbtree.dir/clean
-.PHONY : CMakeFiles/rbtree.dir/clean
+CMakeFiles/run_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/clean
+.PHONY : CMakeFiles/run_tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
