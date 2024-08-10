@@ -16,7 +16,7 @@ The Red-Black Tree (RBT) is a type of self-balancing Binary Search Tree (BST) th
 - **Print Tree Structure**: `.printTree()`
 - **Check Tree Integrity**: `.checkRBTIntegrity()`
 
-### Running the Tests
+### Running the DEMO (Tests)
 
 To ensure that the Red-Black Tree operates correctly and maintains its properties, follow these steps to compile and run the test code:
 
